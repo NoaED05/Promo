@@ -1,0 +1,90 @@
+.container {  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tittle tittle tittle tittle tittle"
+    "content content content content content"
+    "content content content content content"
+    "content content content content content"
+    "footer footer footer footer footer";
+}
+
+.tittle {  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "name name name"
+    "name name name"
+    "topnav topnav topnav";
+  grid-area: tittle;
+  background-color: #099065;
+}
+
+.name { grid-area: name; }
+
+.topnav { grid-area: topnav; }
+
+.content { grid-area: content; }
+
+.footer { grid-area: footer; }
+
+.topnav {
+  background-color: rgb(46, 45, 45);
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(173, 172, 172);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #099065;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+

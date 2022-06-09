@@ -1,0 +1,77 @@
+.container {  display: grid;
+    grid-template-columns: 1.1fr 0.9fr 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.4fr 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      "tittel tittel tittel tittel tittel"
+      "content content content content content"
+      "content content content content content"
+      "content content content content content"
+      "Footer Footer Footer Footer Footer";
+  }
+  
+.tittel {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Tittel Tittel Tittel"
+      "Tittel Tittel Tittel"
+      "Nav Nav Nav";
+    grid-area: tittel;
+  }
+  
+.Tittel { grid-area: Tittel; }
+  
+.Nav { grid-area: Nav; }
+  
+.Footer { grid-area: Footer; }
+  
+.content { grid-area: content; }
+  
+
+.topnav {
+    background-color: rgb(73, 70, 70);
+    overflow: hidden;
+    width: 100%;
+  }
+  
+h1 {
+    text-align: center;
+    font-size: 90px;
+  }
+h2 {text-align: center;}
+  
+.Tittel{
+  background: #66ACB1;
+  }
+
+  .topnav {
+    background-color: rgb(46, 45, 45);
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(173, 172, 172);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #276476;
+    color: white;
+  }
+
+
